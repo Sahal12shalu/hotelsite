@@ -78,7 +78,7 @@ function Popup({ isOpen, onClose, id, onSuccess, pageId }) {
       })
   }, [id])
 
-  if (!isOpen) return null;
+  if (!isOpen || !data) return null;
 
   return (
     <div className="fixed inset-0 h-full flex bg-black/50 items-center justify-center z-50 ">
